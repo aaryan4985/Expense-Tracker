@@ -1,70 +1,173 @@
-# Getting Started with Create React App
+# **Expense Tracker App**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based web application for managing personal finances. This app allows users to add, edit, delete, filter, sort, and search transactions, such as income and expenses, with an intuitive user interface.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## **Table of Contents**
 
-### `npm start`
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Setup Instructions](#setup-instructions)
+- [Project Structure](#project-structure)
+- [Usage](#usage)
+- [Screenshots](#screenshots)
+- [Future Enhancements](#future-enhancements)
+- [Contributing](#contributing)
+- [License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## **Features**
 
-### `npm test`
+1. **Add Transactions**
+   - Add income or expense transactions with a description and amount.
+   
+2. **Edit Transactions**
+   - Modify existing transactions easily.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. **Delete Transactions**
+   - Remove any transaction you no longer need.
 
-### `npm run build`
+4. **Filter Transactions**
+   - View transactions based on:
+     - All
+     - Income
+     - Expenses
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. **Sort Transactions**
+   - Sort transactions by:
+     - Amount (Low to High)
+     - Amount (High to Low)
+     - Description (A-Z)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+6. **Search Transactions**
+   - Search transactions by description.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+7. **Reset Functionality**
+   - Quickly reset all filters, sorting, and search inputs.
 
-### `npm run eject`
+8. **Real-Time Summary**
+   - View the total balance, income, and expenses at a glance.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## **Technologies Used**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **React**: Front-end library
+- **JavaScript (ES6+)**: Programming language
+- **Tailwind CSS**: For styling the UI
+- **Node.js & npm**: For managing packages
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## **Setup Instructions**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Follow these steps to run the project locally:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### **Prerequisites**
+Ensure you have the following installed:
+- Node.js (v14+)
+- npm (v6+)
 
-### Code Splitting
+### **Steps**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/aaryan4985/Expense-Tracker.git
+   cd Expense-Tracker
+   ```
 
-### Analyzing the Bundle Size
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. **Start the development server**
+   ```bash
+   npm start
+   ```
 
-### Making a Progressive Web App
+4. Open the application in your browser at:
+   ```
+   http://localhost:3000
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## **Project Structure**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
+src/
+│-- components/
+│   ├── Header.jsx            # App Header
+│   ├── Summary.jsx           # Summary of transactions
+│   ├── TransactionList.jsx   # List of transactions
+│   ├── AddTransactionForm.jsx # Form to add/edit transactions
+│
+│-- App.jsx                   # Main React Component
+│-- index.js                  # Entry point
+│-- index.css                 # Base styling
+│-- README.md                 # Project documentation
+```
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## **Usage**
 
-### `npm run build` fails to minify
+1. **Add Transaction**:
+   - Enter a description and amount.
+   - Positive amount = **Income** | Negative amount = **Expense**.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2. **Edit Transaction**:
+   - Use the "Edit" button on any transaction.
+
+3. **Delete Transaction**:
+   - Use the "Delete" button to remove a transaction.
+
+4. **Filter, Sort, and Search**:
+   - Use the filter dropdown to view income or expenses.
+   - Sort transactions by amount or description.
+   - Use the search box to find transactions.
+
+5. **Reset**:
+   - Click "Reset" to clear filters, sorting, and search.
+
+---
+
+
+
+## **Future Enhancements**
+
+- Add user authentication for personal dashboards.
+- Implement persistent storage using a backend (e.g., Firebase, MongoDB).
+- Include monthly and yearly transaction summaries.
+- Integrate charts for visualizing income and expense trends.
+
+---
+
+## **Contributing**
+
+Contributions are welcome! 🎉  
+Follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/your-feature`.
+3. Commit your changes: `git commit -m "Add new feature"`.
+4. Push to the branch: `git push origin feature/your-feature`.
+5. Submit a pull request.
+
+---
+
+## **License**
+
+This project is licensed under the MIT License.
+
+---
+
+### **Contact**
+
+For any queries or suggestions, reach out to:  
+**Your Name**: pradhanaaryan@gmail.com
+
+---
